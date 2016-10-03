@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fd2bcb2f-6516-4736-9f4c-ed320bb188ce" name="Oleg@LAVR_NOTE 2016-10-03 10:07:14" runUser="LAVR_NOTE\Oleg" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="4565f766-5daa-495d-a84c-904fe40c0064">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Oleg_LAVR_NOTE 2016-10-03 10_07_14" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2016-10-03T10:07:14.7955762+03:00" queuing="2016-10-03T10:07:15.2960286+03:00" start="2016-10-03T10:07:15.4181100+03:00" finish="2016-10-03T10:07:19.9540785+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod" storage="xpediadotcomtestproject\bin\debug\xpediadotcomtestproject.dll" id="83b5f09a-8bdc-e86e-a82e-a7f2ee9f5ad5">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Test" />
+      </TestCategory>
+      <Execution id="bd4ec200-3098-4ef7-aa97-ba70dee8a551" />
+      <TestMethod codeBase="D:/MyProjects/QAProjects/XpediaDotComTestProject/XpediaDotComTestProject/bin/Debug/XpediaDotComTestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="XpediaDotComTestProject.Tests.Test, XpediaDotComTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod" />
+    </UnitTest>
+    <UnitTest name="ChooseTheCheapestTicket_" storage="xpediadotcomtestproject\bin\debug\xpediadotcomtestproject.dll" id="7928177e-9d9c-c81f-4dd0-68eea33f58ec">
+      <Description>Choose the cheapest ticket.</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="7ca9721a-5ce6-4414-8526-ddf0e58c4c4b" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>XpediaTicket</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/MyProjects/QAProjects/XpediaDotComTestProject/XpediaDotComTestProject/bin/Debug/XpediaDotComTestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="XpediaDotComTestProject.Tests.XpediaTicketFeature, XpediaDotComTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChooseTheCheapestTicket_" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="83b5f09a-8bdc-e86e-a82e-a7f2ee9f5ad5" executionId="bd4ec200-3098-4ef7-aa97-ba70dee8a551" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7928177e-9d9c-c81f-4dd0-68eea33f58ec" executionId="7ca9721a-5ce6-4414-8526-ddf0e58c4c4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bd4ec200-3098-4ef7-aa97-ba70dee8a551" testId="83b5f09a-8bdc-e86e-a82e-a7f2ee9f5ad5" testName="TestMethod" computerName="LAVR_NOTE" duration="00:00:01.5344290" startTime="2016-10-03T10:07:15.4625773+03:00" endTime="2016-10-03T10:07:19.5469089+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd4ec200-3098-4ef7-aa97-ba70dee8a551">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method XpediaDotComTestProject.Tests.Test.TestMethod threw exception: 
+OpenQA.Selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=53.0.2785.143)
+  (Driver info: chromedriver=2.12.301325 (962dea43ddd90e7e4224a03fa3c36a421281abb7),platform=Windows NT 10.0 x86_64)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1277
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1070
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScriptCommand(String script, String commandName, Object[] args) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1154
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScript(String script, Object[] args) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 520
+   at OpenQA.Selenium.Support.Extensions.WebDriverExtensions.ExecuteJavaScript[T](IWebDriver driver, String script, Object[] args) in c:\Projects\webdriver\dotnet\src\support\Extensions\WebDriverExtensions.cs:line 91
+   at XpediaDotComTestProject.Helpers.DriverHelper.WaitForPageLoaded(IWebDriver driver, Int32 timeSeconds) in D:\MyProjects\QAProjects\XpediaDotComTestProject\XpediaDotComTestProject\Helpers\DriverHelper.cs:line 23
+   at XpediaDotComTestProject.Pages.MainPage.GoToFlights() in D:\MyProjects\QAProjects\XpediaDotComTestProject\XpediaDotComTestProject\Pages\MainPage.cs:line 54
+   at XpediaDotComTestProject.Tests.Test.TestMethod() in D:\MyProjects\QAProjects\XpediaDotComTestProject\XpediaDotComTestProject\Tests\Test.cs:line 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7ca9721a-5ce6-4414-8526-ddf0e58c4c4b" testId="7928177e-9d9c-c81f-4dd0-68eea33f58ec" testName="ChooseTheCheapestTicket_" computerName="LAVR_NOTE" startTime="2016-10-03T10:07:19.5484103+03:00" endTime="2016-10-03T10:07:19.6449749+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ca9721a-5ce6-4414-8526-ddf0e58c4c4b">
+      <Output>
+        <ErrorInfo>
+          <Message>Class Initialization method XpediaDotComTestProject.Tests.XpediaTicketFeature.FeatureSetup threw exception. TechTalk.SpecFlow.SpecFlowException: TechTalk.SpecFlow.SpecFlowException: Unable to load plugin: SpecRun. Please check http://go.specflow.org/doc-plugins for details. ---&gt; System.IO.FileNotFoundException: Could not load file or assembly 'SpecRun.SpecFlowPlugin' or one of its dependencies. The system cannot find the file specified.WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at TechTalk.SpecFlow.Plugins.RuntimePluginLoader.LoadPlugin(PluginDescriptor pluginDescriptor)
+ --- End of inner exception stack trace ---
+    at TechTalk.SpecFlow.Plugins.RuntimePluginLoader.LoadPlugin(PluginDescriptor pluginDescriptor)
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.LoadPlugin(PluginDescriptor pluginDescriptor, IRuntimePluginLoader pluginLoader, RuntimePluginEvents runtimePluginEvents)
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.LoadPlugins(IRuntimeConfigurationProvider configurationProvider, ObjectContainer container, RuntimePluginEvents runtimePluginEvents)
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.CreateGlobalContainer(IRuntimeConfigurationProvider configurationProvider)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(Assembly testAssembly, Nullable`1 managedThreadId)
+   at XpediaDotComTestProject.Tests.XpediaTicketFeature.FeatureSetup(TestContext testContext) in D:\MyProjects\QAProjects\XpediaDotComTestProject\XpediaDotComTestProject\Tests\XpediaTicket.feature.cs:line 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
